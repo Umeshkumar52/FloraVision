@@ -7,7 +7,7 @@ export default function Home() {
   return (
       
     <div className='bg-[#061406e1]'>
-    <div style={{  backgroundImage: `url(BgPlant.png)`}} className={`w-full h-full px-[3rem] flex gap-[5rem] text-[#c7c4c4] bg-center bg-no-repeat bg-cover flex-col`}>
+    <div style={{  backgroundImage: `url(/BgPlant.png)`}} className={`w-full h-full px-[3rem] flex gap-[5rem] text-[#c7c4c4] bg-center bg-no-repeat bg-cover flex-col`}>
     <Navbar/>
     <Header/>
    </div>

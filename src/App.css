@@ -1,0 +1,6 @@
+
+.mask {
+  position: absolute;
+  inset: 0;
+  border-radius: 24px;
+}

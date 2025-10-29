@@ -6,7 +6,7 @@ import Footer from '../components/Footer'
 export default function Home() {
   return (
       
-    <div className='bg-[#061406e1]'>
+    <div className='bg-[#031203f6]'>
     <div className={`w-full h-full px-[3rem] flex gap-[5rem] bg-[url('bg_plant.png')] text-[#c7c4c4] bg-center bg-no-repeat bg-cover flex-col`}>
     <Navbar/>
     <Header/>

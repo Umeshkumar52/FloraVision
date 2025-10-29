@@ -1,8 +1,8 @@
 import React from "react";
 import { IoPlayCircleOutline } from "react-icons/io5";
 import { PiDotOutline } from "react-icons/pi";
-import star1 from "../assets/star 1.png";
-import star5 from "../assets/star 5.png";
+import star1 from "../assets/star1.png";
+import star5 from "../assets/star5.png";
 import { FaAngleRight } from "react-icons/fa6";
 import { PiDotOutlineFill } from "react-icons/pi";
 import { PiDotBold } from "react-icons/pi";

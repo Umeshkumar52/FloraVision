@@ -18,7 +18,7 @@ export default function Navbar() {
       </div>
       <div className='hidden md:block'>
       <div  style={{fontFamily:"Indie Flower"}} className='flex text-xl gap-8'>
-        <Link to="/home">Home</Link>
+        <Link to="/">Home</Link>
         <div className='cursor-pointer flex items-center gap-3'>
           <h5>Pkants Type</h5>
           <BiSolidDownArrow className='text-sm'/>

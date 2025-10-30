@@ -76,14 +76,15 @@ export default function Product() {
         "It's like bringing a little piece of nature indoors. Definitely worth the investment—my plant collection has never looked better!",
     },
   ]);
+
+
   return (
-    <div className="overflow-hidden bg-[#061406e1] px-[3rem]  space-y-[8rem] py-[6rem] text-[#FFFFFFBF]">
+        <div className="overflow-hidden bg-[#061406e1] px-[1rem]  space-y-[8rem] py-[6rem] text-[#FFFFFFBF]">
       <div className="flex flex-col gap-[14rem]">
-       
          <div className="flex justify-center">
-          <div className="w-full flex max-w-[480px] px-6 mt-6">
+          <div className="w-full flex justify-center max-w-[480px] md:px-6 mt-6">
             <div className="relative ">
-              <h1 className="text-4xl px-8 leading-tight font-semibold ">
+              <h1 className="text-2xl md:text-4xl  px-4 md:px-8 leading-tight font-semibold ">
                Our Top Selling Plants
               </h1>
               <svg
@@ -106,7 +107,7 @@ export default function Product() {
               <svg
                 className="absolute pb-4 right-0 top-0 -translate-y-4 translate-x-2 rotate-180"
                 width="80"
-                height="80"
+                height="70"
                 viewBox="0 0 80 60"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -150,9 +151,9 @@ export default function Product() {
       {/* customer Review */}
       <div className="flex flex-col gap-[10rem]">
          <div className="flex justify-center">
-          <div className="w-full flex max-w-[420px] px-6 mt-6">
-            <div className="relative ">
-              <h1 className="text-4xl px-8 leading-tight font-semibold ">
+          <div className="w-full flex justify-center px-6 mt-6">
+            <div className="relative">
+              <h1 className="md:text-4xl text-xl px-8 leading-tight font-semibold ">
                Customer Review
               </h1>
               <svg
@@ -175,7 +176,7 @@ export default function Product() {
               <svg
                 className="absolute pb-4 right-0 top-0 -translate-y-4 translate-x-2 rotate-180"
                 width="80"
-                height="80"
+                height="70"
                 viewBox="0 0 80 60"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -194,7 +195,7 @@ export default function Product() {
       
         <div div className="w-full  flex flex-wrap justify-center gap-48 ">
           {reviews.map((review) => (
-            <div className="border-2 border-[#727e72] bg-[#4d604d]/50 w-[25rem] px-10 rounded-[5rem] flex flex-col gap-6 justify-center py-10">
+            <div className="border-2 border-[#727e72] bg-[#4d604d]/50 max-w-sm px-10 rounded-[5rem] flex flex-col gap-6 justify-center py-10">
               <div className="flex gap-4">
                 <img
                   className="rounded-full border-2 size-16"
@@ -221,10 +222,10 @@ export default function Product() {
         </div>
       </div>
 
-      {/* our bests */}
+        {/* our bests */}
       <div className="flex flex-col justify-between gap-[10rem]">
-        <div className="flex justify-center">
-          <div className="w-full flex max-w-[420px] px-6 mt-6">
+        <div className="flex justify-center ">
+          <div className="w-full flex  justify-center md:max-w-lg px-6 mt-6">
             <div className="relative ">
               <h1 className="text-4xl px-8 leading-tight font-semibold ">
                 Our Best o2
@@ -269,17 +270,18 @@ export default function Product() {
         <div className="flex flex-col gap-10 justify-center">
           <div
             div
-            className="relative h-auto lg:h-[30rem] flex flex-col lg:flex-row lg:justify-between items-center border-2 p-10 rounded-[5rem] bg-[#253c25]/50 border-[#adb3ade1] gap-48 "
+            className="relative  lg:h-[30rem] flex flex-col lg:flex-row lg:justify-between items-center border-2 p-10 rounded-[5rem] bg-[#253c25]/50 border-[#adb3ade1] gap-48 "
           >
-            <div className="lg:-ml-[14rem] lg:mt-[6rem] size-[55rem]">
+            <div className="lg:-ml-[14rem] -mt-[8rem] lg:mt-[6rem] size-[30rem] md:size-[55rem]">
               <img
+             
                 className=" h-full w-full object-cover"
                 src={aglaonema}
                 alt="product"
               />
             </div>
-            <div className="lg:absolute lg:m-0 -mt-[25rem] font-medium text-[#FFFFFFBF] flex flex-col gap-4 pr-44 text-xl  lg:left-1/2">
-              <div className="space-y-6">
+            <div className="relative lg:absolute lg:m-0 -mt-[20rem] font-medium text-[#FFFFFFBF] flex flex-col justify-center gap-4 md:pr-44 text-xl  lg:left-1/2">
+              <div className="flex gap-6 flex-col items-center">
                 <h4 className="text-3xl font-bold">
                   We Have Small And Best O2 Plants Collection’s
                 </h4>
@@ -305,6 +307,8 @@ export default function Product() {
           <span className="text-center">---</span>
         </div>
       </div>
+     
     </div>
+
   );
 }

@@ -46,7 +46,7 @@ export default function Footer() {
       <div className="space-y-20">
         <div className="flex flex-col gap-6">
           <h1 className="font-bold text-2xl">For Every Update.</h1>
-          <div className=" rounded-xl p-[3px] border-2 relative flex w-[30rem]">
+          <div className=" rounded-xl p-[3px] border-2 relative flex md:w-[30rem]">
             <input className="bg-inherit focus:outline-none  w-full text-xl py-3 pl-4" type="email" placeholder="Enter Email" />
             <button className="h-full right-0 px-8 py-3 text-lg font-semibold bg-white text-black rounded-xl">SUBSRCIBE</button>
           </div>

@@ -11,7 +11,7 @@ import { HiShoppingBag } from "react-icons/hi2";
 export default function Header() {
   return (
     <div className="flex flex-col pb-[15rem] gap-[5rem]">
-      <div className="flex flex-col md:flex-row px-20 justify-center md:justify-between">
+      <div className="flex flex-col gap-[10rem] md:gap-0 md:flex-row md:px-20 items-center justify-center md:justify-between">
         <div className="flex md:items-start  items-center mt-8 flex-col gap-[6rem]">
           <div className="space-y-2">
             <h1 className="md:text-8xl text-6xl font-semibold">
@@ -58,7 +58,7 @@ export default function Header() {
         </div>
 
         <div className="relative h-[29rem] border-2  border-slate-400 max-w-sm rounded-[5rem] flex bg-[#4d604d]/20 justify-center items-center ">
-          <img className="-mt-[8rem] z-50 max-w-lg " src={Aglaonema} />
+          <img className="-mt-[8rem] z-40 max-w-lg " src={Aglaonema} />
           <div className="absolute w-full z-50 flex flex-col gap-3 bottom-[2rem] space-y-2">
             <div className="pl-16 pr-6">
               <p>Indoor Plant </p>
@@ -117,9 +117,9 @@ export default function Header() {
       {/* trend plants */}
 
       <div className="flex justify-center">
-        <div className="w-full flex max-w-[500px] px-6 mt-6">
+        <div className="w-full flex justify-center max-w-lg px-6 mt-6">
           <div className="relative ">
-            <h1 className="text-4xl px-8 leading-tight font-semibold ">
+            <h1 className="text-2xl md:text-4xl  px-8 leading-tight font-semibold ">
               Our Trendy plants
             </h1>
             <svg
@@ -159,7 +159,8 @@ export default function Header() {
         </div>
       </div>
 
-      <div className="flex text-white flex-col gap-[8rem] px-[12rem]">
+      <div className="flex text-white flex-col gap-[8rem] md:px-[10rem]">
+        {/*  px-[12rem] */}
         <div className=" md:h-[26rem] w-full px-[6rem] py-20 md:py-0 flex flex-col md:flex-row justify-between items-center border-2 border-[#4d604d] bg-[#4d604d]/50 rounded-[151px]">
           <img className="z-50 md:-ml-28 max-w-4xl" src={trendPlant1} />
           <div className="flex md:max-w-[50%] flex-col z-50 space-y-6">
@@ -181,6 +182,7 @@ export default function Header() {
             </div>
           </div>
         </div>
+
         <div className="md:h-[26rem] w-full px-[6rem] justify-evenly flex flex-col md:flex-row py-20 md:py-0 items-center border-2 border-[#4d604d] bg-[#4d604d]/50 rounded-[151px]">
           <div className="flex flex-col z-50  space-y-6">
             <h3 className="text-4xl font-semibold">
@@ -200,7 +202,7 @@ export default function Header() {
               </button>
             </div>
           </div>
-          <img className="z-50 w-full max-w-2xl" src={trendPlant2} />
+          <img className="z-50 w-full max-w-4xl md:max-w-2xl" src={trendPlant2} />
         </div>
       </div>
     </div>
